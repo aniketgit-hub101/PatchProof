@@ -1,0 +1,31 @@
+{
+  "cases": [
+    {
+      "id": "empty-average",
+      "title": "Average of an empty list",
+      "description": "average(values) raises ZeroDivisionError for an empty list. Return 0.0 for empty input while preserving the normal arithmetic mean for non-empty numeric lists.",
+      "root": "empty_average",
+      "allowed_source_files": ["bug.py"],
+      "protected_test_files": ["tests/test_bug.py"],
+      "test_directory": "tests"
+    },
+    {
+      "id": "punctuation-palindrome",
+      "title": "Palindrome normalization",
+      "description": "is_palindrome(text) compares raw characters. It should ignore letter case and non-alphanumeric characters while retaining the existing boolean result for ordinary strings.",
+      "root": "punctuation_palindrome",
+      "allowed_source_files": ["bug.py"],
+      "protected_test_files": ["tests/test_bug.py"],
+      "test_directory": "tests"
+    },
+    {
+      "id": "lower-bound-clamp",
+      "title": "Clamp lower bound",
+      "description": "clamp(value, lower, upper) enforces only the upper bound. It must constrain values below lower as well as above upper, leaving values inside the interval unchanged.",
+      "root": "lower_bound_clamp",
+      "allowed_source_files": ["bug.py"],
+      "protected_test_files": ["tests/test_bug.py"],
+      "test_directory": "tests"
+    }
+  ]
+}
